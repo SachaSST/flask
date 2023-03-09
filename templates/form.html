@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulaire</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='form.css') }}">
+    <link href="LEMONMILK-Bold.otf" rel="stylesheet">
+</head>
+<body>
+    <h1 style="color: WHITE; font-family: 'LEMONMILK-Bold', sans-serif;">𝑭𝑶𝑹𝑴𝑼𝑳𝑨𝑰𝑹𝑬</h1>
+    <form action="/form" method="POST">
+
+        <div class="form-group-container">
+            <div class="form-group">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required value="{{ name }}" Placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required value="{{ email }}" Placeholder="email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+        </div>
+        <input type="submit" value="Envoyer">
+    </form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Connexion</title>
+    <link href="fonts/Voyage-Bold.otf" rel="stylesheet">
+    <link href="fonts/Coolgumz_PersonalUseOnly.ttf" rel="stylesheet">
+    <link href="aAbstractGroovy.otf" rel="stylesheet">
+    <link href="OMEGLE.otf" rel="stylesheet">
+    <link href="LEMONMILK-Bold.otf" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login.css') }}">
+</head>
+<body>
+     <h1 style="color: WHITE; font-family: 'LEMONMILK-Bold', sans-serif;">LOG IN </h1>
+
+    <form  action="/login" method="post" class="login-box">
+        <label for="username">Username </label>
+        <input type="text" id="username" name="username" Placeholder="Username">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" Placeholder="Password">
+        <input type="submit" value="Se connecter">
+    </form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accueil</title>
+    <link href="fonts/Voyage-Bold.otf" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
+    <style>
+        h1 {
+            font-family: 'aliens and cows', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    {% if 'username' in session %}
+    <nav>
+        <ul>
+            <li><a href="/">Accueil</a></li>
+        </ul>
+    </nav>
+    <h1>Bienvenue {{ session['username'] }} !</h1>
+    <p><a href="/logout">Déconnexion</a></p>
+    {% else %}
+    <nav>
+        <ul>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/login">Connexion</a></li>
+            <li><a href="/register">Inscription</a></li>
+        </ul>
+    </nav>
+
+    <h1 style="font-family: 'Voyage-Bold', sans-serif;">BaseConnect</h1>
+    <p>Veuillez renseigner vos informations en utilisant le formulaire ci-dessous :</p>
+    <a href="/form" id="form-btn" class="form-btn">Formulaire</a>
+
+    {% endif %}
+</body>
+</html>

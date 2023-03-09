@@ -1,0 +1,176 @@
+body {
+  background-color: lightskyblue;
+  color: white;
+  background-image: url("Celste D.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: #555;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background-color: #00bfff;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background: linear-gradient(to bottom right, #dfdfdf, #3e3e3e);
+}
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.4);
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #bebebe;
+  text-align: left;
+}
+
+input[type="text"], input[type="email"], textarea {
+  margin: 10px 0px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  background-color: rgba(255,255,255,0.13);
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.4);
+  outline: none;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+input[type="submit"]:active {
+  transform: translateY(2px);
+}
+
+textarea {
+  height: 100px;
+}
+
+.float-label {
+  position: relative;
+  margin-top: 10px;
+}
+
+.float-label label {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  pointer-events: none;
+  color: #333;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.float-label input[type="text"], .float-label input[type="email"], .float-label textarea {
+  padding: 10px 10px 10px 40px;
+  background-color: rgba(0, 255, 255, 0.91);
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.4);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.float-label input[type="text"]:focus ~ label, .float-label input[type="email"]:focus ~ label, .float-label textarea:focus ~ label,
+.float-label input[type="text"]:not(:placeholder-shown) ~ label, .float-label input[type="email"]:not(:placeholder-shown) ~ label, .float-label textarea:not(:placeholder-shown) ~ label {
+  top: -20px;
+  left: 10px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #5e5eff;
+  padding: 0px 5px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.4);
+}
+
+.bloc {
+  position: relative;
+  margin-top: 20px;
+  padding: 20px;
+  width: 100%;
+  background-color: rgba(0, 255, 217, 0.2);
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.4);
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bloc label {
+  width: calc(33.33% - 10px);
+}
+
+.bloc input[type="text"], .bloc textarea {
+  width: calc(66.66% - 10px);
+}
+
+
+
+
+
+
+

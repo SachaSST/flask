@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LOG IN </title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='register.css') }}">
+    <link href="LEMONMILK-Bold.otf" rel="stylesheet">
+    <link href="OMEGLE.otf" rel="stylesheet">
+</head>
+<body>
+    <h1 style="color: WHITE; font-family: 'LEMONMILK-Bold', sans-serif;">SIGN UP </h1>
+    {% if error %}
+        <p>{{ error }}</p>
+    {% endif %}
+    <form action="/register" method="post" class="login-box">
+        <label for="username">Nom d'utilisateur</label>
+        <input type="text" id="username" name="username" Placeholder="Username">
+        <label for="password">Mot de passe</label>
+        <input type="password" id="password" name="password" Placeholder="Password">
+        <input type="submit" value="S'inscrire">
+    </form>
+</body>
+</html>
